@@ -69,7 +69,7 @@
 		</div>
 	
 	</main>
-	<footer>
+	<footer id="footer">
 		<p>2023 JordansSushi</p>
 	</footer>
 </body>
@@ -313,4 +313,17 @@
   });
 }
 	</script>
+	<script>
+  /// Get a reference to the footer element using its ID
+  const footer = document.getElementById('footer');
+
+  /// Create a new Date object to represent the current date and time
+  const currentDate = new Date();
+
+  /// Convert the date object to a string using the users date/time
+  const dateTimeString = currentDate.toLocaleString();
+
+  /// Set the contents of the footer element to a string that includes the current date and time
+  footer.innerHTML = `Current date and time: ${dateTimeString}`;
+</script>
 </html>

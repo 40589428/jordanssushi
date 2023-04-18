@@ -64,7 +64,7 @@
 	
 	<div id="button">
 		<button onclick = "quizCalifornia()" class="button">Quiz</button>
-		<button onclick="downloadWordDocument()">Download/Print Recipe</button>
+		<button onclick="downloadFile()">Download Word Document</button>
     </div>
 	
 	<h2>More Recipes You May Love</h2>
@@ -75,7 +75,7 @@
 		</div>
 	
 	</main>
-	<footer>
+	<footer id="footer">
 		<p>2023 JordansSushi</p>
 	</footer>
 </body>
@@ -305,18 +305,30 @@
 }
         
 	</script>
-	<script>
-	function printWordDocument() {
-  /// get the URL of the Word document 
-	const printUrl = "https://40589428.github.io/jordanssushi/californiarollrecipe.docx"; /// place with your Word document URL 
+<script>
+  function downloadFile() {
+    // Create a temporary link element
+    const link = document.createElement('a');
+    link.href = 'https://github.com/40589428/jordanssushi/californiarollrecipe.docx';
+    link.download = 'californiarollrecipe.docx';
 
-  /// Open a new window with the Word document 
-	const printWindow = window.open(printUrl, "_blank");  
-  /// Wait for the window to finish loading 
-	printWindow.addEventListener("load", function() {
-    /// Trigger the print dialog for the user to print the document 
-    printWindow.print();
-  });
-}
-	</script>
+    // Simulate a click on the link to trigger the download
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+</script>
+	<script>
+  /// Get a reference to the footer element using its ID
+  const footer = document.getElementById('footer');
+
+  /// Create a new Date object to represent the current date and time
+  const currentDate = new Date();
+
+  /// Convert the date object to a string using the users date/time
+  const dateTimeString = currentDate.toLocaleString();
+
+  /// Set the contents of the footer element to a string that includes the current date and time
+  footer.innerHTML = `Current date and time: ${dateTimeString}`;
+</script>
 </html>

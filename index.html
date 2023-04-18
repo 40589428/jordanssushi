@@ -41,8 +41,22 @@ There are many different types of sushi, including maki (rolled sushi), temaki (
     <p>If you are a sushi enthusiast and want to learn from the best sushi cooks, there are several skilled chefs you can learn from.</p>
     <p>Jiro Ono is widely regarded as the world's best sushi chef. Masaharu Morimoto is a well-known Japanese chef who has made a name for himself in the United States. Daisuke Nakazawa is another Japanese sushi chef who gained fame after being featured in the documentary "Jiro Dreams of Sushi."</p>
 	</main>
-	<footer>
+	<footer id="footer">
 		<p>2023 JordansSushi</p>
 	</footer>
 </body>
+
+<script>
+  /// Get a reference to the footer element using its ID
+  const footer = document.getElementById('footer');
+
+  /// Create a new Date object to represent the current date and time
+  const currentDate = new Date();
+
+  /// Convert the date object to a string using the users date/time
+  const dateTimeString = currentDate.toLocaleString();
+
+  /// Set the contents of the footer element to a string that includes the current date and time
+  footer.innerHTML = `Current date and time: ${dateTimeString}`;
+</script>
 </html>
