@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<header>
+		<h1>Futomaki Roll</h1>
+	<nav>
+	    <a href="index.html">Home</a>
+	</nav>
+	</header>
+	<main>
+	<img src="logo.png" alt="Logo" class="center">
+	<h2>Futomaki Roll</h2>
+    <p>Futomaki is a type of sushi that is traditionally made with a larger roll than other types of sushi. The word "futomaki" literally means "thick roll" in Japanese. 
+	The sushi roll is typically made with seasoned sushi rice and a variety of fillings, which can include cooked or raw seafood, egg, vegetables such as cucumber, pickled daikon radish, and kanpyo (dried gourd strips). The fillings are usually cut into thin strips and placed in the center of the rice before the roll is tightly wrapped with a sheet of nori seaweed. 
+	Futomaki is often sliced into thick pieces and served as a meal or snack. It is often eaten on special occasions such as festivals, and it is sometimes served as part of a bento box lunch. Futomaki is also sometimes called "e-ho-maki" in Japan and is traditionally eaten on Setsubun, the day before the beginning of spring, for good luck and fortune.</p>
+	<i><h4>Recipe by Jordan Brown | Created on 27/02/23</h4></i>
+	<img src="sushi2.jpg" alt="Sushi" class="center">
+	<h3>Prep Time: 30min | Cook Time: 20min | Total Time: 50min | Servings: 5 | Yield: 5 Rolls</h3>
+
+<div class="section">
+      <h2>Ingredients</h2>
+      <ul>
+		<li>2 cups sushi rice</li>
+		<li>2 1/4 cups water</li>
+		<li>1/4 cup rice vinegar</li>
+		<li>2 tablespoons sugar</li>
+		<li>1 teaspoon salt</li>
+		<li>5-6 sheets of nori seaweed</li>
+		<li>1/4 lb of salmon, sliced into strips</li>
+		<li>1/4 cup of cucumber, julienned</li>
+		<li>1/4 cup of carrots, julienned</li>
+		<li>1/4 cup of avocado, sliced into strips</li>
+		<li>1/4 cup of pickled daikon, sliced into strips (optional)</li>
+		<li>Wasabi paste and soy sauce for serving</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Directions</h2>
+      <ol>
+<li>Wash the sushi rice in cold water until the water runs clear. Drain the rice and add it to a pot with 2 1/4 cups of water. Bring the water to a boil, then reduce the heat and let it simmer for 15-20 minutes, or until the rice is cooked.</li>
+		<li>In a small bowl, mix together the rice vinegar, sugar, and salt until the sugar and salt have dissolved.</li>
+		<li>Once the rice is cooked, transfer it to a large bowl and add the vinegar mixture. Mix well to combine and let the rice cool to room temperature.</li>
+		<li>Take a sheet of nori seaweed and place it on a sushi mat or a piece of plastic wrap. Spread a thin layer of the sushi rice over the nori, leaving a 1-inch border at the top edge of the nori.</li>
+		<li>Place the sliced salmon, cucumber, carrots, avocado, and pickled daikon in a line across the middle of the rice.</li>
+		<li>Use the mat or plastic wrap to tightly roll the sushi, starting at the bottom edge and rolling towards the top. Squeeze the roll gently to make sure it is tightly packed.</li>
+		<li>Repeat the process with the remaining nori and ingredients until all of the sushi rolls are made.</li>
+		<li>Using a sharp knife, slice the sushi rolls into 1-inch thick pieces.</li>
+		<li>Serve with wasabi paste and soy sauce.</li>
+      </ol>
+    </div>
+	<div class="section">
+		<h2>Video Tutorial</h2>
+		<video width="778" height="500" controls>
+		<source src="futomakivideo.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+	</div>
+	
+	<div id="button">
+		<button onclick = "quizFutomaki()" class="button">Quiz</button>
+		<button onclick="downloadWordDocument()">Download/Print Recipe</button>
+    </div>
+	
+	<h2>More Recipes You May Love</h2>
+		<div class="sushi">
+			<a href="californiaroll.html"><img src="sushi1.jpg" alt="Sushi 1"></a>
+			<a href="uramaki.html"><img src="sushi3.jpg" alt="Sushi 3"></a>
+			<a href="hosomaki.html"><img src="sushi4.jpg" alt="Sushi 4"></a>
+		</div>
+	
+	</main>
+	<footer>
+		<p>2023 JordansSushi</p>
+	</footer>
+</body>
+
+<script>   
+       
+   function quizFutomaki()
+     
+       
+    //// question 1
+     
+{   
+	var score = 0;
+	
+	var userAnswer1 = 0;
+    
+    //// holds right answer
+    
+	var question1Answer = "4" ;
+    
+     //// displays possible answers
+	
+	alert("What is futomaki sushi? \n1 - Futomaki sushi is a type of sushi that is made with only raw fish. \n2 - Futomaki sushi is a type of sushi that is only filled with rice and seaweed. \n3 - Futomaki sushi is a type of sushi that is typically served with a side of miso soup. \n4 - Futomaki sushi is a type of sushi that consists of a rolled sushi with a variety of fillings, such as tamagoyaki (sweet omelette), cucumber, shiitake mushrooms, kanpyo (dried gourd), and sometimes seafood like shrimp, salmon or crab.");
+	
+	userAnswer1 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer1 < 1 || userAnswer1 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer1 = prompt("What is your answer?");
+				}
+	
+	if(userAnswer1 == question1Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+     //// question 2
+    	
+    var userAnswer2 = 0;
+    
+    //// holds right answer
+    
+	var question2Answer = "4" ;
+    
+     //// displays possible answers
+	
+	alert("What does the word futomaki mean? \n1 - The word futomaki means spicy roll in Japanese. \n2 - The word futomaki means small roll in Japanese. \n3 - The word futomaki means thin roll in Japanese. \n4 - The word futomaki literally means thick roll in Japanese, which refers to the larger size of the sushi roll compared to other types of sushi.");
+	
+	userAnswer2 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer2 < 1 || userAnswer2 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer2 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer2 == question2Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 3  
+    
+    var userAnswer3 = 0;
+    
+    //// holds right answer
+    
+	var question3Answer = "2" ;
+    
+     //// displays possible answers
+	
+	alert("What is the proper way to eat futomaki sushi? \n1 - Futomaki sushi should be eaten with a fork. \n2 - Futomaki sushi is typically eaten with chopsticks, and should be dipped lightly in soy sauce before being consumed. It's also traditional to eat each piece in one bite. \n3 - Futomaki sushi should be eaten with the hands. \n4 - Futomaki sushi should be dipped in wasabi instead of soy sauce.");
+	
+	userAnswer3 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer3 < 1 || userAnswer3 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer3 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer3 == question3Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 4
+    
+    var userAnswer4 = 0;
+    
+    //// holds right answer
+    
+	var question4Answer = "3" ;
+	
+     //// displays possible answers
+    
+	alert("What is the origin of futomaki sushi? \n1 - Futomaki sushi originated in Tokyo, Japan. \n2 - Futomaki sushi was invented by a famous chef from France. \n3 - Futomaki sushi originated in the Kansai region of Japan. \n4 - Futomaki sushi was first made by Samurai warriors in ancient Japan.");
+	
+	userAnswer4 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer4 < 1 || userAnswer4 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer4 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer4 == question4Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 5
+    
+        var userAnswer5 = 0;
+    
+    //// holds right answer
+    
+	var question5Answer = "2" ;
+    
+     //// displays possible answers
+	
+	alert("What are some common fillings for futomaki sushi? \n1 Some common fillings for futomaki sushi include uni (sea urchin) and otoro (fatty tuna). \n2 - Some common fillings for futomaki sushi include tamagoyaki, cucumber, shiitake mushrooms, kanpyo, and seafood like shrimp or crab. Other fillings may include pickled daikon radish, spinach, or kampyo (dried gourd). n3\ - Some common fillings for futomaki sushi include wasabi-flavored potato chips and fried chicken nuggets. \n4 - Some common fillings for futomaki sushi include truffles and caviar.");
+	
+	userAnswer5 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer5 < 1 || userAnswer5 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 2 only");
+					userAnswer5 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer5 == question5Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 6
+    
+            var userAnswer6 = 0;
+    
+    //// holds right answer
+    
+	var question6Answer = "1" ;
+    
+     //// displays possible answers
+	
+	alert("How is futomaki sushi different from other types of sushi? \n1 - Futomaki sushi is different from other types of sushi because it is a thicker and larger roll that typically contains a greater variety of ingredients. It also often includes cooked ingredients, rather than just raw fish like other types of sushi. \n2 - Futomaki sushi is different from other types of sushi because it is made with sweetened rice. \n3 - Futomaki sushi is different from other types of sushi because it is always served deep-fried. \n4 - Futomaki sushi is different from other types of sushi because it is never served with soy sauce.");
+	
+	userAnswer6 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer6 < 1 || userAnswer6 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer6 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer6 == question6Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+	
+	/// range of messages based on score ranging from 0, 1, 2
+	
+   var Message = ["You have got all questions correct", "You have done well", "Better luck next time"];
+
+	/// if statements look at what you scored in the quiz. The range selects the appropiate message to display based on what score you got. 
+
+	var range;
+	if (score < 3) {
+	range = 2;
+	}
+	if (score > 3 && score < 5) {
+	range = 1
+	}
+	if (score > 5) {
+	range = 0
+	}
+	
+	/// alert displays message based on score
+	
+	{
+	alert(Message[range]);
+	}
+	
+	/// alert displays score
+	
+	{
+	alert("You scored " + score + " Correct");
+	}
+}
+        
+	</script>
+
+	<script>
+	function printWordDocument() {
+  /// get the URL of the Word document 
+	const printUrl = "https://jordanssushi.com.com/futomakirecipe.docx"; /// place with your Word document URL 
+
+  /// Open a new window with the Word document 
+	const printWindow = window.open(printUrl, "_blank");  
+  /// Wait for the window to finish loading 
+	printWindow.addEventListener("load", function() {
+    /// Trigger the print dialog for the user to print the document 
+    printWindow.print();
+  });
+}
+	</script>
+</html>

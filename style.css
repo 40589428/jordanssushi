@@ -1,0 +1,111 @@
+/* set a default font family and size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* centre logo and images */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* style the header */
+header {
+  background-color: #ff3333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* style the main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 24px;
+}
+
+main p {
+  line-height: 1.5;
+}
+
+.sushi {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.sushi img {
+  max-width: 97%;
+}
+
+/* style the list of chefs */
+ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+}
+
+ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+/* style the footer */
+footer {
+  background-color: #eee;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+/* style button */
+button {
+   background-color: #ff3333;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 25px;
+}
+
+/* home navigation */
+nav {
+	padding: 10px;
+	background-color: black;
+	margin-bottom: 5px;
+}
+nav a {
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+	padding: 10px 15px;
+}
+nav a:hover {
+	color: black;
+	background-color: white;
+}
+
+/* creates box and padding for directions/ingrediants */
+.section {
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+

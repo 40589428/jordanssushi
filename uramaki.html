@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+	<header>
+		<h1>Uramaki Roll</h1>
+	<nav>
+	    <a href="index.html">Home</a>
+	</nav>
+	</header>
+	<main>
+	<img src="logo.png" alt="Logo" class="center">
+	<h2>Uramaki Roll</h2>
+    <p>Uramaki sushi is a type of sushi that originated in the United States and has since become popular around the world.
+	It is also known as an inside-out roll because the rice is on the outside of the seaweed wrapper, with the filling on the inside. 
+	The rice is seasoned with vinegar, sugar, and salt and is typically mixed with ingredients such as sesame seeds, avocado, or cucumber.
+	The filling can include raw or cooked seafood, vegetables, or other ingredients such as tofu or egg.
+
+The seaweed wrapper is usually coated with sesame seeds or tobiko (flying fish roe) for added texture and flavor. Uramaki sushi is often served with soy sauce, wasabi, and pickled ginger on the side.</p>
+	<i><h4>Recipe by Jordan Brown | Created on 27/02/23</h4></i>
+	<img src="sushi3.jpg" alt="Sushi" class="center">
+	<h3>Prep Time: 30min | Cook Time: 20min | Total Time: 50min | Servings: 4 | Yield: 4</h3>
+
+<div class="section">
+      <h2>Ingredients</h2>
+      <ul>
+		<li>2 cups sushi rice</li>
+		<li>2 cups water</li>
+		<li>4 tablespoons rice vinegar</li>
+		<li>2 tablespoons sugar</li>
+		<li>1 tablespoon salt</li>
+		<li>4 sheets of nori seaweed</li>
+		<li>1 avocado, peeled and sliced</li>
+		<li>1 small cucumber, julienned</li>
+		<li>1 small carrot, julienned</li>
+		<li>8-10 cooked shrimp, peeled and deveined</li>
+		<li>1 tablespoon sesame seeds</li>
+		<li>Wasabi and soy sauce for serving</li>
+      </ul>
+    </div>
+    <div class="section">
+      <h2>Directions</h2>
+      <ol>
+		<li>Rinse the sushi rice in a fine mesh strainer and place it in a pot with 2 cups of water. Bring to a boil, then reduce the heat to low, cover and simmer for 18-20 minutes, or until the rice is cooked and the water is absorbed.</li>
+		<li>In a small saucepan, combine the rice vinegar, sugar, and salt. Heat over low heat, stirring until the sugar dissolves.</li>
+		<li>Transfer the cooked rice to a large bowl and pour the vinegar mixture over it. Mix gently with a wooden spoon until the rice is evenly coated and the mixture has cooled to room temperature.</li>
+		<li>Place a sheet of nori on a bamboo sushi mat, shiny side down. Spread a thin layer of rice over the nori, leaving a 1-inch border at the top edge.</li>
+		<li>Arrange the avocado, cucumber, carrot, and shrimp on top of the rice in a line, running from left to right.</li>
+		<li>Use the bamboo mat to roll the sushi away from you, tucking in the filling as you go. When you reach the top edge, moisten it with water and press to seal the roll.</li>
+		<li>Sprinkle the sesame seeds over the top of the roll, and slice it into 8-10 pieces with a sharp knife.</li>
+		<li>Serve with wasabi and soy sauce on the side.</li>
+      </ol>
+    </div>
+	<div class="section">
+		<h2>Video Tutorial</h2>
+		<video width="778" height="500" controls>
+		<source src="uramakivideo.mp4" type="video/mp4">
+		Your browser does not support the video tag.
+		</video>
+	</div>
+	
+	<div id="button">
+    <button onclick = "quizUramaki()" class="button">Quiz</button>
+	<button onclick="downloadWordDocument()">Download/Print Recipe</button>
+    </div>
+	
+	<h2>More Recipes You May Love</h2>
+		<div class="sushi">
+			<a href="californiaroll.html"><img src="sushi1.jpg" alt="Sushi 1"></a>
+			<a href="futomaki.html"><img src="sushi2.jpg" alt="Sushi 2"></a>
+			<a href="hosomaki.html"><img src="sushi4.jpg" alt="Sushi 4"></a>
+		</div>
+	
+	</main>
+	<footer>
+		<p>2023 JordansSushi</p>
+	</footer>
+</body>
+
+<script>   
+       
+   function quizUramaki()
+     
+       
+    //// question 1
+     
+{   
+	var score = 0;
+	
+	var userAnswer1 = 0;
+    
+    //// holds right answer
+    
+	var question1Answer = "2" ;
+    
+     //// displays possible answers
+	
+	alert("What is uramaki sushi? \n1 - Uramaki sushi is a type of sushi that is deep-fried. \n2 - Uramaki sushi is a type of sushi that is rolled with the rice on the outside and the seaweed on the inside. \n3 - Uramaki sushi is a type of sushi that is served with the seaweed on the outside and the rice on the inside. \n4 - Uramaki sushi is a type of sushi that is made with sweetened rice vinegar.");
+	
+	userAnswer1 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer1 < 1 || userAnswer1 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer1 = prompt("What is your answer?");
+				}
+	
+	if(userAnswer1 == question1Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+     //// question 2
+    	
+    var userAnswer2 = 0;
+    
+    //// holds right answer
+    
+	var question2Answer = "4" ;
+    
+     //// displays possible answers
+	
+	alert("What is the difference between uramaki and hosomaki? \n1 - The only difference between uramaki and hosomaki is the size of the roll. \n2 - Hosomaki is a type of sushi that is rolled with the rice on the outside and the seaweed on the inside, just like uramaki. \n3 - The filling is the only difference between uramaki and hosomaki. \n4 - Uramaki is rolled with the rice on the outside and the seaweed on the inside, while hosomaki is rolled with the seaweed on the outside and the rice on the inside.");
+	
+	userAnswer2 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer2 < 1 || userAnswer2 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer2 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer2 == question2Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 3  
+    
+    var userAnswer3 = 0;
+    
+    //// holds right answer
+    
+	var question3Answer = "2" ;
+    
+     //// displays possible answers
+	
+	alert("What is the most common type of filling in uramaki sushi? \n1 - The most common type of filling in uramaki sushi is salmon roe. \n2 -  Avocado and crab meat are the most common types of filling in uramaki sushi. \n3 - The most common type of filling in uramaki sushi is peanut butter. \n4 - The most common type of filling in uramaki sushi is sliced bananas.");
+	
+	userAnswer3 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer3 < 1 || userAnswer3 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer3 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer3 == question3Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 4
+    
+    var userAnswer4 = 0;
+    
+    //// holds right answer
+    
+	var question4Answer = "1" ;
+	
+     //// displays possible answers
+    
+	alert("What is the purpose of using plastic wrap when making uramaki sushi? \n1 - Plastic wrap is used to help keep the sushi roll tight and prevent the ingredients from falling out. \n2 - Plastic wrap is used to add flavor to uramaki sushi. \n3 - Plastic wrap is used to make uramaki sushi look more attractive. \n4 - Plastic wrap is used to protect the seaweed from getting damaged during transportation.");
+	
+	userAnswer4 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer4 < 1 || userAnswer4 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer4 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer4 == question4Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 5
+    
+        var userAnswer5 = 0;
+    
+    //// holds right answer
+    
+	var question5Answer = "4" ;
+    
+     //// displays possible answers
+	
+	alert("What is the difference between futomaki and uramaki? \n1 Futomaki and uramaki are two names for the same type of sushi roll. \n2 -  The only difference between futomaki and uramaki is the way they are cut. \n3 - Futomaki is a type of sushi roll that is always made with raw fish, while uramaki is always made with cooked ingredients. \n4 - Futomaki is a larger, thicker sushi roll that is typically made with more than three ingredients and cut into larger pieces. Uramaki, on the other hand, is a smaller, thinner sushi roll that is typically made with one or two ingredients.");
+	
+	userAnswer5 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer5 < 1 || userAnswer5 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 2 only");
+					userAnswer5 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer5 == question5Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+    
+    //// question 6
+    
+            var userAnswer6 = 0;
+    
+    //// holds right answer
+    
+	var question6Answer = "1" ;
+    
+     //// displays possible answers
+	
+	alert("Can you eat uramaki sushi with chopsticks or with your hands? \n1 - Uramaki sushi can be eaten with chopsticks or with your hands, depending on personal preference. \n2 - Uramaki sushi must be eaten with a fork and knife. \n3 - It is traditional to eat uramaki sushi with a straw. \n4 - Uramaki sushi can only be eaten with your left hand.");
+	
+	userAnswer6 = parseInt(prompt("What is your answer?"));
+	
+    /// makes sure answer is between 1 and 4
+    
+	while (userAnswer6 < 1 || userAnswer6 > 4)
+				{
+					alert("Incorrect entry - number between 1 and 4 only");
+					userAnswer6 = prompt("What is your answer?");
+				}
+    
+	if(userAnswer6 == question6Answer)
+	{
+		alert("correct");
+		score = (score + 1);
+	} else
+	{
+		alert("Wrong");
+	}
+	
+	/// range of messages based on score ranging from 0, 1, 2
+	
+   var Message = ["You have got all questions correct", "You have done well", "Better luck next time"];
+
+	/// if statements look at what you scored in the quiz. The range selects the appropiate message to display based on what score you got. 
+
+	var range;
+	if (score < 3) {
+	range = 2;
+	}
+	if (score > 3 && score < 5) {
+	range = 1
+	}
+	if (score > 5) {
+	range = 0
+	}
+	
+	/// alert displays message based on score
+	
+	{
+	alert(Message[range]);
+	}
+	
+	/// alert displays score
+	
+	{
+	alert("You scored " + score + " Correct");
+	}
+}
+        
+	</script>
+	<script>
+	function printWordDocument() {
+  /// get the URL of the Word document 
+	const printUrl = "https://jordanssushi.com.com/californiarollrecipe.docx"; /// place with your Word document URL 
+
+  /// Open a new window with the Word document 
+	const printWindow = window.open(printUrl, "_blank");  
+  /// Wait for the window to finish loading 
+	printWindow.addEventListener("load", function() {
+    /// Trigger the print dialog for the user to print the document 
+    printWindow.print();
+  });
+}
+	</script>
+</html>
