@@ -307,28 +307,26 @@
 	</script>
 <script>
   function downloadFile() {
-    // Create a temporary link element
     const link = document.createElement('a');
     link.href = 'https://github.com/40589428/jordanssushi/californiarollrecipe.docx';
     link.download = 'californiarollrecipe.docx';
 
-    // Simulate a click on the link to trigger the download
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
 </script>
 	<script>
-  /// Get a reference to the footer element using its ID
+  /// Gets a reference to the footer element using its ID
   const footer = document.getElementById('footer');
 
-  /// Create a new Date object to represent the current date and time
+  /// Creating a new date object to represent the current date and time
   const currentDate = new Date();
 
-  /// Convert the date object to a string using the users date/time
+  /// Converts the date object to a string using the users date/time
   const dateTimeString = currentDate.toLocaleString();
 
-  /// Set the contents of the footer element to a string that includes the current date and time
+  /// Sets the contents of the footer element to a string that includes the current date and time
   footer.innerHTML = `Current date and time: ${dateTimeString}`;
 </script>
 </html>

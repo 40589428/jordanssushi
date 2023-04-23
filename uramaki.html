@@ -307,30 +307,16 @@ The seaweed wrapper is usually coated with sesame seeds or tobiko (flying fish r
         
 	</script>
 	<script>
-	function printWordDocument() {
-  /// get the URL of the Word document 
-	const printUrl = "https://jordanssushi.com.com/californiarollrecipe.docx"; /// place with your Word document URL 
-
-  /// Open a new window with the Word document 
-	const printWindow = window.open(printUrl, "_blank");  
-  /// Wait for the window to finish loading 
-	printWindow.addEventListener("load", function() {
-    /// Trigger the print dialog for the user to print the document 
-    printWindow.print();
-  });
-}
-	</script>
-	<script>
-  /// Get a reference to the footer element using its ID
+  /// Gets a reference to the footer element using its ID
   const footer = document.getElementById('footer');
 
-  /// Create a new Date object to represent the current date and time
+  /// Creates a new Date object to represent the current date and time
   const currentDate = new Date();
 
-  /// Convert the date object to a string using the users date/time
+  /// Converts the date object to a string using the users date/time
   const dateTimeString = currentDate.toLocaleString();
 
-  /// Set the contents of the footer element to a string that includes the current date and time
+  /// Sets the contents of the footer element to a string that includes the current date and time
   footer.innerHTML = `Current date and time: ${dateTimeString}`;
 </script>
 </html>
